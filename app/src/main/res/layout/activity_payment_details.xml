@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeActivities.PaymentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/toolbar"
+        app:title="CMoto"
+        android:layout_marginTop="8dp"
+        android:background="#FFF"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back_icon"
+            android:id="@+id/back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Payments"
+            android:fontFamily="@font/poppins"
+            android:textSize="33sp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/toolbarText"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center_vertical"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="3dp"
+        android:layout_marginLeft="65dp"
+        android:background="#000"
+        android:layout_below="@+id/toolbar"
+        android:layout_toRightOf="@+id/login_back"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/relativeLayout"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Amount Due"
+            android:fontFamily="@font/poppin_regular"
+            android:id="@+id/amountDueText"
+            android:textColor="#000"
+            android:textSize="23sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Rs. 5400"
+            android:id="@+id/amountDue"
+            android:layout_alignParentEnd="true"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#000"
+            android:id="@+id/line"
+            android:layout_below="@+id/amountDueText"
+            android:layout_toRightOf="@+id/login_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#191818"
+            android:textSize="13sp"
+            android:id="@+id/lastPaidOn"
+            android:fontFamily="@font/poppin_regular"
+            android:layout_alignParentEnd="true"
+            android:text="last paid on 21 JUNE 2020"
+            android:layout_below="@+id/line"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shadow_payment"
+        android:elevation="15dp"
+        android:translationY="5dp"
+        android:translationX="0dp"
+        android:layout_below="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/presentMonth"
+            android:textColor="#000"
+            android:fontFamily="@font/poppin_regular"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="23sp"
+            android:text="July"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="1.5dp"
+            android:background="#000"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/line2"
+            android:layout_below="@+id/presentMonth"
+            android:layout_toRightOf="@+id/login_back"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/recyclerView">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

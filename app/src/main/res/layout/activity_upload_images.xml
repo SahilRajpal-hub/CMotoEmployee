@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00171F">
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Upload Images"
+        android:layout_marginLeft="40dp"
+        android:textSize="38sp"
+        android:id="@+id/heading"
+        android:fontFamily="@font/poppins"
+        android:textColor="#FFF"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:src="#FFF"
+        android:id="@+id/line1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/heading"
+        android:layout_marginLeft="40dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:gravity="center"
+        android:id="@+id/text"
+        android:layout_marginTop="30dp"
+        android:text="Fantastic! Now its time to upload your\n work with beautiful image"
+        android:textColor="#FFF"
+        android:fontFamily="@font/poppin_medium"
+        android:textSize="16sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/linearLayout1"
+        android:layout_centerInParent="true"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="120dp"
+            android:layout_marginLeft="30dp"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="25dp"
+            android:scaleType="fitXY"
+            android:padding="4dp"
+            android:id="@+id/uploadImage1"
+            android:background="@drawable/add_images"/>
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_marginRight="30dp"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="25dp"
+            android:padding="4dp"
+            android:scaleType="fitXY"
+            android:id="@+id/uploadImage2"
+            android:background="@drawable/add_images"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/almostDoneText"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="We are almost done!"
+        android:fontFamily="@font/poppin_regular"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:id="@+id/submit"
+        android:src="@drawable/submit"
+        android:layout_below="@id/almostDoneText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+
+</RelativeLayout>

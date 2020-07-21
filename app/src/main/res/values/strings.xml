@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">CMotoEmployee</string>
+
+    <!--    Login strings-->
+    <string name="loginAsAdmin">LOGIN AS ADMIN</string>
+    <string name="loginAsEmployee">LOGIN AS EMPLOYEE</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <!--    menu items title-->
+    <string name="logout">logout</string>
+    <string name="try_again"><u>TRY AGAIN</u></string>
+    <string name="scanBarcode">Scan Barcode</string>
+    <string name="user_photos">user_photos</string>
+    <string name="carNumber">carNumber</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="latitude">latitude</string>
+    <string name="longitude">longitude</string>
+    <string name="cMotoAdmin">CMotoAdmin</string>
+    <string name="getLocation">getLocation</string>
+    <string name="Area">Area</string>
+    <string name="Society">Society</string>
+    <string name="profile">Profile</string>
+    <string name="refresh">refresh</string>
+    <string name="area">area</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="termsAndConditions"><![CDATA[Terms & conditions]]></string>
+
+
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="Timer"
+        android:textSize="38sp"
+        android:textColor="#00171F"
+        android:fontFamily="@font/poppins"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/heading"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="2dp"
+        android:src="#00171F"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/heading"/>
+
+    <ProgressBar
+        android:id="@+id/barTimer"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="80dp"
+        android:indeterminate="false"
+        android:progress="78"
+        android:progressDrawable="@drawable/circular_timer"
+        android:background="@drawable/circular_shape"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7:89"
+        android:gravity="center"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/poppins"
+        android:textColor="#050C33"
+        android:layout_below="@+id/heading"
+        android:textSize="43sp"
+        android:id="@+id/textTimer"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/appFreezedText"
+        android:layout_below="@+id/barTimer"
+        android:text="This app is now freezed for next 8 minutes"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="#00171F"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/cleanCarText"
+        android:layout_below="@+id/appFreezedText"
+        android:text="Let's clean the car"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="#00171F"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="40dp"/>
+
+</RelativeLayout>

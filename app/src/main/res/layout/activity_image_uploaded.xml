@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:id="@+id/tick"
+        android:src="@drawable/tick"/>
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/carsCleanedText"
+        android:gravity="center"
+        android:layout_below="@+id/tick"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        android:text="Great!\nYou have now cleaned the car"
+        android:textSize="17sp"
+        android:textColor="#00171F"
+        android:fontFamily="@font/poppins"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/carsCleanedText"
+        android:background="@drawable/image_uploaded_round_corner"
+        android:layout_margin="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout1"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="15dp"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="Cars Remaining"
+                android:id="@+id/carsRemaining"
+                android:textColor="#00171F"
+                android:textSize="23sp"
+                android:fontFamily="@font/poppins"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:id="@+id/carsRemainingNumber"
+                android:textColor="#00171F"
+                android:textSize="23sp"
+                android:fontFamily="@font/poppins"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/linearLayout1"
+            android:id="@+id/linearLayout2"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="Cars Done"
+                android:id="@+id/carsDone"
+                android:textColor="#00171F"
+                android:textSize="23sp"
+                android:fontFamily="@font/poppins"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:id="@+id/carsDoneNumber"
+                android:textColor="#00171F"
+                android:textSize="23sp"
+                android:fontFamily="@font/poppins"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:text="GO TO CAR LISTINGS"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppin_medium"
+        android:id="@+id/gotToCarList"
+        android:layout_below="@+id/relativeLayout"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:background="@drawable/round_corners_darkblue"/>
+
+</RelativeLayout>

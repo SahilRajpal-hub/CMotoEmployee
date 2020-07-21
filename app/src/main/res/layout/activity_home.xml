@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".EmployeeActivities.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:id="@+id/Menu"
+        android:visibility="gone"
+        android:translationZ="0.5dp"
+        android:background="#00171F">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:id="@+id/exit"
+            android:src="@drawable/ic_menu_icon_white"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:id="@+id/profileImage"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/profileImage"
+            android:layout_marginTop="15dp"
+            android:id="@+id/name"
+            android:fontFamily="@font/poppins"
+            android:text="JOnna Vargesse"
+            android:textColor="#FFF"
+            android:textSize="21sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:padding="20dp"
+            android:id="@+id/linearLayout1"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile"
+                android:text="Profile"
+                android:textColor="#FFF"
+                android:fontFamily="@font/poppin_medium"
+                android:textStyle="normal"
+                android:gravity="start"
+                android:layout_margin="5dp"
+                android:textSize="23sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/carList"
+                android:text="Car List"
+                android:fontFamily="@font/poppin_medium"
+                android:textColor="#FFF"
+                android:gravity="start"
+                android:layout_margin="5dp"
+                android:textSize="23sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/paymentsDetails"
+                android:text="Payment Details"
+                android:textColor="#FFF"
+                android:fontFamily="@font/poppin_medium"
+                android:gravity="start"
+                android:layout_margin="5dp"
+                android:textSize="23sp"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:id="@+id/line2"
+            android:src="#FFF"
+            android:layout_below="@+id/linearLayout1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line2"
+            android:padding="20dp"
+            android:id="@+id/linearLayout2"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/termsAndCondition"
+                android:text="@string/termsAndConditions"
+                android:textColor="#FFF"
+                android:fontFamily="@font/poppin_medium"
+                android:textStyle="normal"
+                android:gravity="start"
+                android:layout_margin="5dp"
+                android:textSize="23sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutUs"
+                android:text="About Us"
+                android:fontFamily="@font/poppin_medium"
+                android:textColor="#FFF"
+                android:gravity="start"
+                android:layout_margin="5dp"
+                android:textSize="23sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactUs"
+                android:text="Contact Us"
+                android:textColor="#FFF"
+                android:fontFamily="@font/poppin_medium"
+                android:gravity="start"
+                android:layout_margin="5dp"
+                android:textSize="23sp"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:id="@+id/line3"
+            android:src="#FFF"
+            android:layout_below="@+id/linearLayout2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line3"
+            android:text="Log out"
+            android:textColor="#FFF"
+            android:id="@+id/logout"
+            android:fontFamily="@font/poppin_medium"
+            android:gravity="start"
+            android:layout_margin="25dp"
+            android:textSize="23sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:padding="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/facebookLink"
+                android:padding="2dp"
+                android:src="@drawable/ic_icons8_facebook_f"
+                android:layout_height="40dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/instagramLink"
+                android:padding="2dp"
+                android:src="@drawable/ic_icons8_instagram"
+                android:layout_height="40dp"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/lunkedIn"
+                android:padding="2dp"
+                android:src="@drawable/ic_icons8_linkedin_2"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/Menu"
+        android:id="@+id/remainingBody"
+        android:visibility="gone"
+        android:translationZ="1dp"/>
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/toolbar"
+        app:title="CMoto"
+        android:background="#FFF"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_menu_icon_darkblue"
+            android:id="@+id/menu"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Car List"
+            android:fontFamily="@font/poppins"
+            android:textSize="33sp"
+            android:id="@+id/toolbarText"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="3dp"
+        android:layout_marginLeft="70dp"
+        android:background="#000"
+        android:layout_below="@+id/toolbar"
+        android:layout_toRightOf="@+id/login_back"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/relativeLayout"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow_large_curvature"
+            android:translationZ="2dp"
+            android:elevation="10dp"
+            android:layout_height="55dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/done"
+                android:layout_height="match_parent"
+                android:text="8\nDone"
+                android:fontFamily="@font/poppin_regular"
+                android:textSize="19dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#0E0D0E"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shadow_large_curvature"
+            android:layout_marginRight="20dp"
+            android:elevation="10dp"
+            android:translationZ="2dp"
+            android:layout_height="55dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/remaining"
+                android:layout_height="match_parent"
+                android:text="9\nRemaining"
+                android:textSize="19dp"
+                android:fontFamily="@font/poppin_regular"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#0E0D0E"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/progressBar"
+        android:layout_centerInParent="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="-7dp"
+        android:id="@+id/recyclerView">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:text="NO More Duties availiable"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/workComplete"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="#00171F"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="30dp"
+        android:id="@+id/scanner"
+        android:background="@drawable/circular_shape_for_views"
+        android:padding="15dp"
+        android:src="@drawable/ic_scan_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentRight="true" />
+
+
+
+
+</RelativeLayout>

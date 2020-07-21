@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:translationZ="0.2dp"
+        android:id="@+id/logo"
+        android:visibility="gone"
+        android:background="#FFF"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:src="@drawable/cmoto_logo"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="100dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/login"
+            android:layout_toRightOf="@+id/login_back"
+            android:textColor="#10171F"
+            android:textSize="50sp"
+            android:fontFamily="@font/poppins"/>
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_back_icon"
+            android:layout_marginTop="10dp"
+            android:id="@+id/login_back"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="60dp" />
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="90dp"
+        android:paddingTop="40dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:inputType="textEmailAddress"
+            android:hint="E-mail"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppin_regular"
+            android:background="@drawable/edittext_border"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/input_email"/>
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:background="@drawable/edittext_border"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:fontFamily="@font/poppin_regular"
+            android:layout_margin="30dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/input_password"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:fontFamily="@font/poppin_regular"
+            android:textSize="20sp"
+            android:text="LOGIN"
+            android:id="@+id/login_btn"
+            android:background="@drawable/white_button_background"
+            android:padding="2dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_margin="10dp"
+            android:background="#000"
+            android:layout_below="@+id/login"
+            android:layout_toRightOf="@+id/login_back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:text="@string/loginAsAdmin"
+            android:gravity="center"
+            android:fontFamily="@font/poppin_regular"
+            android:textSize="16sp"
+            android:id="@+id/loginAsAdmin"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/login_progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginPleaseWait"
+        android:text="Please wait ..."
+        android:textColor="#0A0B0B"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/login_progressBar"
+        android:layout_alignRight="@+id/login_progressBar"
+        android:layout_alignLeft="@+id/login_progressBar"
+        android:layout_marginTop="12dp"/>
+
+</RelativeLayout>

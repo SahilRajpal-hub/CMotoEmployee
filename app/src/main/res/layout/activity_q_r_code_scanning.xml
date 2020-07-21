@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00171F"
+    tools:context=".EmployeeActivities.QRCodeScanning">
+
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/exit"
+            android:src="@drawable/exit"
+            android:layout_margin="20dp"
+            android:translationZ="1dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+        <com.journeyapps.barcodescanner.CompoundBarcodeView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="320dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/barcodeScanner"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/scan_qr_to_start_cleaning"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/scan_boundary"
+            android:src="@drawable/scan_boundary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="338dp"
+            android:id="@+id/textHider"
+            android:layout_alignParentBottom="true"
+            android:background="#00171F"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/text1"
+            android:layout_below="@+id/textHider"
+            android:layout_marginTop="-300dp"
+            android:fontFamily="@font/poppin_regular"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="Not able to scan the car?"
+            android:textColor="#FFF"
+            android:textSize="17sp" />
+
+
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text2"
+            android:gravity="center_horizontal"
+            android:text="@string/try_again"
+            android:fontFamily="@font/poppin_regular"
+            android:layout_below="@+id/text1"
+            android:textColor="#FFF"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text2"
+            android:background="@drawable/round_corners_white"
+            android:text="Scan another car"
+            android:id="@+id/scanAnotherCar"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppin_medium"
+            android:textAllCaps="false"
+            android:textColor="#00171F"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:padding="10sp"/>
+
+
+
+
+
+</RelativeLayout>

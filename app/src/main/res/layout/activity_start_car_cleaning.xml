@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".EmployeeActivities.StartCarCleaningActivity">
+
+    <ProgressBar
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/progressBar"
+        android:translationZ="25dp"
+        android:layout_centerInParent="true"/>
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/back"
+        android:src="@drawable/ic_back_icon"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/back"
+        android:textSize="28sp"
+        android:id="@+id/carNumber"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="DL 5B 8786"
+        android:padding="6dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="3dp"
+        android:src="#000"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/carNumber"
+        android:layout_toRightOf="@+id/back"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/carNumber"
+        android:background="@drawable/round_corners_white"
+        android:id="@+id/carPhotoContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_height="230dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="240dp"
+            android:padding="3dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/carPhoto"/>
+
+    </RelativeLayout>
+
+
+
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:weightSum="4"
+        android:layout_marginLeft="20dp"
+        android:padding="4dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/linearLayout1"
+        android:background="@drawable/shadow"
+        android:elevation="10dp"
+        android:translationZ="2dp"
+        android:layout_below="@+id/carPhotoContainer"
+        android:layout_marginTop="20dp">
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:background="#FFF"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/carModel"
+                android:fontFamily="@font/poppin_medium"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="Honda City"
+                android:gravity="center_vertical"
+                android:padding="2dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/poppin_medium"
+                android:id="@+id/car_Number"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="DL 5B 8786"
+                android:gravity="center_vertical"
+                android:padding="2dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#FFFF"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                app:civ_border_width="1dp"
+                android:layout_margin="4dp"
+                app:civ_border_color="#000"
+                android:background="#FFF"
+                android:id="@+id/carColorImage"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:fontFamily="@font/poppin_regular"
+                android:textColor="#000"
+                android:text="White"
+                android:id="@+id/carColor"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:weightSum="4"
+        android:layout_marginTop="20dp"
+        android:padding="2dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/shadow"
+        android:elevation="10dp"
+        android:translationZ="2dp"
+        android:id="@+id/linearLayout2"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/linearLayout1">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:background="#FFF"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:id="@+id/callText"
+            android:text="Call Owner"
+            android:fontFamily="@font/poppin_medium"
+            android:textColor="#000"
+            android:gravity="center_vertical"
+            android:padding="6dp"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:background="@drawable/circular_shape_for_views"
+                android:id="@+id/callOwner"
+                android:src="@drawable/ic_call_icon"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:weightSum="4"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/linearLayout3"
+        android:background="@drawable/shadow"
+        android:elevation="10dp"
+        android:translationZ="2dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="9dp"
+                android:text="Address"
+                android:fontFamily="@font/poppins"
+                android:textColor="#000"
+                android:gravity="center_vertical"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/carLocation"
+                android:layout_marginLeft="9dp"
+                android:text="hNo 23, Uttam Nagar, New Delhi , India"
+                android:fontFamily="@font/poppin_regular"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:padding="7dp"
+                android:layout_gravity="center"
+                android:id="@+id/openMap"
+                android:src="@drawable/ic_direction_icon"
+                android:background="@drawable/circular_shape_for_views"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Directions"
+                android:fontFamily="@font/poppin_regular"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="#00171F"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_below="@+id/linearLayout3"
+        android:background="@drawable/white_button_background">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_scan_icon"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="SCANNER"
+            android:id="@+id/scanner"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textSize="21sp"
+            android:textColor="#FFF"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
